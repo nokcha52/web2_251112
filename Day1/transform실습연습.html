@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        section {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            background-color: aqua;
+        }
+
+        .img_section1,
+        .img_section2,
+        .img_section3 {
+            width: 50%;
+            height: 100%;
+            background-size: cover;
+         
+        }
+
+        .img_section1 {
+            background-image: url(./1.jpg);
+        }
+
+        .img_section2 {
+            background-image: url(./2.jpg);
+        }
+
+        .img_section3 {
+            background-image: url(./3.jpg);
+        }
+
+        .inner_text {
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+        
+        .img_section1:hover,
+        .img_section2:hover,
+        .img_section3:hover {
+            transform: scale(1.2);
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="img_section1">
+            <div class="inner_text">
+                <h2>Leather</h2>
+                <p>프리미엄가죽</p>
+            </div>
+        </div>
+        <div class="img_section2">
+            <div class="inner_text">
+                <h2>Fabric</h2>
+                <p>기능성 패브릭</p>
+            </div>
+        </div>
+        <div class="img_section3">
+            <div class="inner_text">
+                <h2>Material</h2>
+                <p>올바른 내장재</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
