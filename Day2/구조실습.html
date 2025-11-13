@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: pink;
+            padding: 16px 32px;
+            align-items: center;
+        }
+
+        .header_menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .header_menu > li {
+            margin: 16px;
+        }
+
+        .header_menu >li >a{
+            text-decoration: none;
+            color: pink;
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 16px;
+        }
+
+        .news_article {
+            border: 2px solid pink;
+            margin: 16px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .content_section {
+            flex-shrink: 0;
+        }
+        footer {
+            height: 200px;
+            background-color: pink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul class="header_menu">
+                <li>
+                    <a href="#">menu</a>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content_section">
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque ratione consectetur soluta pariatur quas ea temporibus cum dignissimos veritatis quia consequuntur eius nemo natus quidem, iste neque delectus architecto.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque ratione consectetur soluta pariatur quas ea temporibus cum dignissimos veritatis quia consequuntur eius nemo natus quidem, iste neque delectus architecto.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque ratione consectetur soluta pariatur quas ea temporibus cum dignissimos veritatis quia consequuntur eius nemo natus quidem, iste neque delectus architecto.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque ratione consectetur soluta pariatur quas ea temporibus cum dignissimos veritatis quia consequuntur eius nemo natus quidem, iste neque delectus architecto.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque ratione consectetur soluta pariatur quas ea temporibus cum dignissimos veritatis quia consequuntur eius nemo natus quidem, iste neque delectus architecto.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque ratione consectetur soluta pariatur quas ea temporibus cum dignissimos veritatis quia consequuntur eius nemo natus quidem, iste neque delectus architecto.
+                </p>
+            </article>
+        </section>
+
+        <aside class="asdie">
+            <h3>Right aside</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi magni dolorum exercitationem error repellat, optio cumque velit! Quam, beatae accusamus! Eaque enim maxime et consequuntur aperiam culpa consectetur vero aspernatur?</p>
+
+            <div class="user_form">
+                <input type="text" placeholder="이름입력">
+                <button type="submit">제출</button>
+            </div>
+            <div class="ppl">
+                <h3>광고</h3>
+                <p>광고내용</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        푸터입니다
+    </footer>
+    
+</body>
+</html>
