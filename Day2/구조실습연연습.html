@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            background-color: rgb(231, 185, 193);
+            color: #fff;
+            margin: 0;            
+            padding: 0 30px;
+        }
+        nav {
+            height: 100%;
+            line-height: 100px;
+        }
+
+        nav > ul {
+            list-style: none;
+            display: flex;           
+            gap: 20px;
+            margin: 0;
+            
+        }
+
+        nav > ul > li > a {            
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgb(256,256,256,0.9);            
+            color: rgb(214, 123, 123);
+            border-radius: 12px;
+        }
+
+        main {
+            width: 1200px;
+            display: flex;
+            margin: 0;
+            /* justify-content: center; */
+        }
+        
+        .article_box {
+            width: 70%;
+            height: 100%;
+            padding: 20px;
+            flex-shrink: 0;
+            
+        }
+
+        .news_article {
+            border: 2px solid#e4a0a0;
+            padding: 0;
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="article_box">
+            <article class="news_article">
+                <div>
+                    <h2>옆집에 고양이가 침입했다!</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sed totam deleniti beatae, iure dignissimos blanditiis doloribus, temporibus itaque molestiae fugit. Architecto error beatae voluptatum, facilis quam in totam aliquam!</p>
+                </div>
+            </article>
+            <article class="news_article">
+                <div>
+                    <h2>바다에서 쉬고 있는 점박이물범!</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sed totam deleniti beatae, iure dignissimos blanditiis doloribus, temporibus itaque molestiae fugit. Architecto error beatae voluptatum, facilis quam in totam aliquam!</p>
+                <div>
+            </article>
+            <article class="news_article">
+                <div>
+                    <h2>건강을 지키는 생활습관 10가지</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sed totam deleniti beatae, iure dignissimos blanditiis doloribus, temporibus itaque molestiae fugit. Architecto error beatae voluptatum, facilis quam in totam aliquam!</p>
+                <div>
+            </article>
+            <article class="news_article">
+                <div>
+                    <h2>아이돌 커플 탄생?!</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sed totam deleniti beatae, iure dignissimos blanditiis doloribus, temporibus itaque molestiae fugit. Architecto error beatae voluptatum, facilis quam in totam aliquam!</p>
+                <div>
+            </article>
+            <article class="news_article">
+                <div>
+                    <h2>종합영양제 과연 효과가 있을까?</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sed totam deleniti beatae, iure dignissimos blanditiis doloribus, temporibus itaque molestiae fugit. Architecto error beatae voluptatum, facilis quam in totam aliquam!</p>
+                </div>
+            </article>
+            <article class="news_article">
+                <div>
+                    <h2>월요일 직장인 피로도 99%라는 연구결과</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sed totam deleniti beatae, iure dignissimos blanditiis doloribus, temporibus itaque molestiae fugit. Architecto error beatae voluptatum, facilis quam in totam aliquam!</p>
+                </div>
+            </article>
+         </section>
+
+        <aside>
+            <div>
+                <h3>Right aside</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, sunt. Assumenda laborum, aut minima at rem explicabo eveniet dignissimos odio dicta, accusantium quisquam a perferendis beatae in corrupti modi ipsa.</p>
+            </div>
+            <div>
+                <input type="text" placeholder="이름입력">
+                <button>제출</button>
+            </div>
+            <div>
+                <h3>광고</h3>
+                <p>광고내용</p>
+            </div>
+        </aside>         
+       
+    </main>
+    <footer>푸터입니다</footer>
+</body>
+</html>
