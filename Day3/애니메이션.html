@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            /* animation-name: boxAnimation; */
+            /* 지속시간 */
+            /* animation-duration: 5s; */
+            /* 재생횟수 */
+            /* animation-iteration-count: 2; */
+            /* 재생방향 */
+            /* animation-direction: reverse; */
+            /* 애니메이션이 종료될 때 원래대로 돌아오지 않음 기본값은 backward */
+            /* animation-fill-mode: forwards;
+            브라우저 열린 뒤 대기시간
+            animation-delay: 5s;
+             */
+            /* animation: boxAnimation 5s linear 3s 2 forwards; */
+            
+
+        }
+
+        .box:nth-child(1) {
+            background: #c76e6e;
+            animation: boxAnimation 1s linear 3s infinite forwards;
+        }
+
+        .box:nth-child(2) {
+            background: #c7af6e;
+            animation: boxAnimation 1s ease 3s infinite forwards;
+        }
+
+        .box:nth-child(3) {
+            background: #8ac76e;
+            animation: boxAnimation 1s ease-in 3s infinite forwards;
+        }
+
+        .box:nth-child(4) {
+            background: #6eb5c7;
+            animation: boxAnimation 1s ease-in-out 3s infinite forwards;
+        }
+
+        .box:nth-child(5) {
+            background: #956ec7;
+            animation: boxAnimation 1s ease-out 3s infinite forwards;
+        }
+        .box:nth-child(6) {
+            background: #c76eac;
+            animation: boxAnimation 1s cubic-bezier(0.74,-0.03, 0.21, 1.14) 3s infinite forwards;
+        }
+
+        @keyframes boxAnimation {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</body>
+</html>
