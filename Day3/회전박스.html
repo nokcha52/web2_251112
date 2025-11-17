@@ -5,35 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회전박스</title>
     <style>
-        div {
+        body {
+            position: relative;
+        }
+        .box {
+            position: absolute;
             width: 100px;
             height: 100px;
             background: #4933a8;
             border-radius: 8px;
-        }
-
-        .box {
             animation: boxAnimation 3s linear infinite forwards;
         }
         @keyframes boxAnimation {
+            0% {
+                top: 0;
+                left: 0;
+            }
             25% {
-                left: 200px;
+                top: 0;
+                left: 300px;
 
             }
 
             50% {
-               
+                left: 300px;
+                top: 300px;            
 
             }
 
             75% {
-                
-
+                top: 300px;
+                left: 0;
             }
 
             100% {
-
+                top: 0;
+                left: 0;
             }
+
+  
         }
     </style>
 </head>
