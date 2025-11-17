@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼센테이지실습</title>
+    <style>
+        body {
+            background-color: rgb(235, 235, 159);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            border: 2px solid#f8a03b;
+            margin: 16px;
+            padding: 0 16px;
+            position: relative;
+            height: 100px;
+        }
+
+        h2 {
+            line-height: 100px;
+            margin: 0;
+        }
+        li::before {
+            content: "";
+            height: 100px;
+            width: 0;
+            background: #f8a03b;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        li:nth-child(1):hover::before {
+            width: 20%;
+        }
+        li:nth-child(2):hover::before {
+            width: 40%;
+        }
+        li:nth-child(3):hover::before {
+            width: 60%;
+        }
+        li:nth-child(4):hover::before {
+            width: 80%;
+        }
+        li:nth-child(5):hover::before {
+            width: 100%;
+        }
+     
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>
+                <h2>20%</h2>
+            </li>
+            <li>
+                <h2>40%</h2>
+            </li>
+            <li>
+                <h2>60%</h2>
+            </li>
+            <li>
+                <h2>80%</h2>
+            </li>
+            <li>
+                <h2>100%</h2>
+            </li>
+        </ul>
+    </section>
+    
+</body>
+</html>
