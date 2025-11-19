@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플러스에서 엑스로</title>
+    <script src="https://kit.fontawesome.com/5dece3bbcb.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 50px;
+            background-color: antiquewhite;
+        }
+
+        ul {
+            display: flex;            
+        }
+
+        li {
+            padding: 16px;
+            list-style: none;            
+        }
+
+        .btn > button {
+            background: none;
+            border: none;
+            color: #000000;
+
+        }
+
+        @keyframes plus_to_close {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(225deg);
+            }
+        }
+
+        .btn > button:hover i {
+            animation: plus_to_close 1s forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+        </ul>
+
+        <div class="btn">
+            <button>
+                <i class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    
+</body>
+</html>

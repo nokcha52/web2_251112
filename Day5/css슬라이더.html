@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            width: 300px;
+            height: 50px;
+            margin: 20px 0;
+            
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul {
+            width: 1200px;
+            display: flex;
+            overflow: hidden;
+            /* border: 1px solid#000; */
+            list-style: none;
+            justify-content: space-between;
+        
+        }
+
+        li {
+            /* border: 1px solid#000; */
+            min-width: 268px;
+            margin: 0 16px;
+            height: 150px;
+            
+        }
+
+        button:focus + ul li {
+            animation: css_slide 3s forwards;
+            animation-timing-function: cubic-bezier(0.57,-0.12, 0.46, 1.15);
+        }
+
+        li:nth-child(1) {
+            background-image: url(./1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background-image: url(./2.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background-image: url(./3.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background-image: url(./4.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(5) {
+            background-image: url(./5.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(6) {
+            background-image: url(./6.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(7) {
+            background-image: url(./7.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(8) {
+            background-image: url(./8.jpg);
+            background-size: cover;
+        }
+
+        /* ul {
+            animation-name: css_slide;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+        } */
+
+        @keyframes css_slide {
+            5% {
+                transform: translateX(0);
+            }            
+            
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <button>
+            다른 동물 보기 버튼
+        </button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

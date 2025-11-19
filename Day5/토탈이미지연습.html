@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            width: 600px;
+            justify-content: space-between;
+            padding: 100px;
+        }
+        @keyframes circle_moving {
+            33% {
+                transform: translatey(0);
+            }
+
+            66% {
+                transform: translateY(300px);
+            }
+
+            100% {
+                transform: translatey(0);
+            }
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%; 
+            animation: circle_moving 2s linear infinite forwards;   
+                 
+        }
+
+        .circle2 {
+            animation-delay: 0.2s;        
+        }
+        .circle3 {
+            animation-delay: 0.4s;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </section>
+</body>
+
+</html>
