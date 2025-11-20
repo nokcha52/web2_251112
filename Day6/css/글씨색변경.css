@@ -1,0 +1,23 @@
+:root {
+    --main_color: blue;
+    --sub_color: skyblue;
+    --button_bg: pink;
+    --lg_font: 56px;
+}
+.text_color {
+    color: rgb(182, 63, 63);
+}
+
+.main_text {
+    color: var(--main_color);
+    font-size: var(--lg_font);
+
+}
+
+.sub_text {
+    color: var(--sub_color);
+}
+
+.button {
+    background-color: var(--button_bg);
+}

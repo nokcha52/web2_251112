@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무한회전텍스트</title>
+    <style>
+        section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .ani_text {
+            width: max-content;
+            font-size: 150px;
+            animation: roll_text 50s infinite linear;
+        }
+        @keyframes roll_text {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="ani_text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, nihil delectus! Iusto alias libero beatae assumenda aut animi tempore cupiditate consequatur quis eaque, aliquid dolorem praesentium. Quidem laboriosam fuga nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eaque modi quo nemo! Unde hic, beatae quod veniam facere similique rerum dolorem error repellendus nobis ipsa quia illo temporibus non!</p>
+        </div>
+    </section>
+</body>
+</html>
