@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약</title>
+    <script src="https://kit.fontawesome.com/5dece3bbcb.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: 'Paperozi_400';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi_700';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+        
+        * {
+            text-decoration: none;
+            list-style: none;
+            color: rgb(182, 212, 255);
+            margin: 0;
+            font-family: Paperozi_400;
+            font-size: 24px;
+        }
+
+        header {
+            width: 100%;
+            background: #205ed1;
+        }
+
+        .upper {
+            display: flex;
+            justify-content: right;
+            margin: 10px;            
+        }
+
+        .upper>a {
+            font-size: 18px;
+            margin: 20px 20px 0 0;
+        }
+
+        .container {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            border: 1.5px solid rgb(182, 212, 255);
+            padding: 0 30px;
+            margin: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: Paperozi_700;
+            margin: 0;
+            font-size: 40px;
+        }
+
+        ul {
+            gap: 40px;
+            
+        }
+
+        figure {
+            margin: 4px;
+        }
+
+        .container > ul {
+            display: flex;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            line-height: 100px;
+        }
+
+        .search > i {
+            padding: 20px;
+        }
+
+        .search {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            border: 1px solid rgb(182, 212, 255);
+            border-radius: 32px;
+            height: 50px;
+        }
+
+        .search > input {
+            border: none;
+            width: 50px;
+            background: transparent;
+            margin: 0;
+        }
+
+        .right > a > i {
+            margin: 0;
+            line-height: 100px;
+        }
+
+        @media (max-width:1700px) {
+            .search {
+                width: 200px;
+            }
+            *,
+            .upper > a {
+                font-size: 17px;
+            }
+            ul {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width:1280px) {
+            *,
+            .upper > a {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            ul {
+                gap: 15px;
+            }
+
+            .search {
+                width: 150px;
+            }
+        }
+        
+        @media (max-width:1024px) {
+            *,
+            .upper > a {
+                font-size: 14px;
+            }
+
+            .search {
+                width: 100px;
+            }
+
+            ul {
+                gap: 10px;
+            }
+        }
+
+        @media (max-width:920px) {
+            * {
+                font-size: 12px;
+            }
+
+        }
+
+        @media (max-width:800px) {            
+            .container > ul {
+                display: none;
+            }
+
+            .right:nth-child(2) {
+                display: none;
+            }
+
+            .upper {
+                display: none;
+            }
+            .search {
+                border: 0px;
+            }
+            .globe {
+                display: none;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="upper">
+            <a href="#">준법경영</a>
+            <a href="#">판매약국찾기</a>
+            <a href="#">감사제보하기</a>
+        </div>
+
+        <div class="container">
+            <div class="logo">
+                <figure>
+                    <i class="fa-solid fa-mortar-pestle fa-2xl"></i>
+                </figure>
+                <h1>동아제약</h1>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        회사소개
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        브랜드
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        R&D
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        정도경영
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        뉴스룸
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        인재채용
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        고객지원
+                    </a>
+                </li>
+            </ul>
+
+            <div class="right">
+                <div class="search">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+                <a href="#" class="globe">
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+</body>
+
+</html>
