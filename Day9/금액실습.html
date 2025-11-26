@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userName = prompt("당신의 이름은?");
+        let userTrafficCost = prompt("당신의 교통비는?");
+        let userFoodCost = prompt("당신의 식비는?");
+        let userDrinkCost = prompt("당신의 음료비는?");
+        let total = Number(userTrafficCost) + Number(userFoodCost) + Number(userDrinkCost);
+
+        let result = (total) <= 10000 ? "참 관리를 잘하셨어요" : total-10000+"원 초과입니다";
+        document.write(userName + "님 " + result);
+
+
+    </script>
+    
+</body>
+</html>
