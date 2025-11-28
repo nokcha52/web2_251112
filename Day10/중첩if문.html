@@ -32,7 +32,7 @@
 
         // 유저 아이디와 비밀번호를 미리 저장해둔 후
         // 사용자에게 id/ password를 입력받는다.
-        // 설정해놓은 아이디오 비밀번호 모두가 일치할 경우 .? id님 반갑습니다!
+        // 설정해놓은 아이디와 비밀번호 모두가 일치할 경우 -> id님 반갑습니다!
         // 비밀번호가 일치하지 않을 경우 -> 비밀번호가 일치하지 않습니다!
         // 아이디와 일치하지 않을 경우 -> 아이디와 일치하지 않습니다. 회원가입하러 가기 출력
 
@@ -43,13 +43,20 @@
         let userPassword = prompt("비밀번호를 입력하세요")
 
         if (userId == savedId && userPassword === savedPassword) {
-            document.write(userId + "님 반갑습니다!");
-            if (userPassword !== savedPassword) {
-                document.write("비밀번호가 일치하지 않습니다!");
-            } else if (userId != savedId) {
-                document.write("아이디가 일치하지 않습니다! 회원가입하러 가기");
-            }
+            document.write(userId + "님 반갑습니다!");            
+        } else if (userId != savedId) {
+            document.write("아이디가 일치하지 않습니다! 회원가입하러 가기");
+        } else if (userPassword !== savedPassword) {
+            document.write("비밀번호가 일치하지 않습니다!");
         }
+
+        if (userId == savedId && userPassword === savedPassword) {
+            document.write(userId + "님 반갑습니다!");
+        } else if (userId != savedId) {
+            document.write("아이디가 일치하지 않습니다! 회원가입하러 가기")
+        }   
+
+        
         
     </script>
     
