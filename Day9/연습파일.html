@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userName = prompt("당신의 이름은?");
+        let trafficCost = prompt("당신이 하루동안 소비한 교통비는?");
+        let drinkCost = prompt("당신이 하루동안 소비한 음료비는?")
+        let foodCost = prompt("당신이 하루동안 소비한 식비는?")
+
+        let result = Number(trafficCost) + Number(drinkCost) + Number(foodCost);
+        let overCost = result - 10000;
+
+        if (result <= 10000) {
+            document.write(userName + "님 당신은 절약을 참 잘하시는군요!");
+        }else {
+            document.write(userName + "님 당신은 " + overCost + "원 초과하셨습니다" )
+        }
+
+    </script>
+    
+</body>
+</html>

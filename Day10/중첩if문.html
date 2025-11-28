@@ -42,20 +42,22 @@
         let userId = prompt("아이디를 입력하세요")
         let userPassword = prompt("비밀번호를 입력하세요")
 
-        if (userId == savedId && userPassword === savedPassword) {
-            document.write(userId + "님 반갑습니다!");            
-        } else if (userId != savedId) {
-            document.write("아이디가 일치하지 않습니다! 회원가입하러 가기");
-        } else if (userPassword !== savedPassword) {
-            document.write("비밀번호가 일치하지 않습니다!");
-        }
+        // if (userId == savedId && userPassword === savedPassword) {
+        //     document.write(userId + "님 반갑습니다!");            
+        // } else if (userId != savedId) {
+        //     document.write("아이디가 일치하지 않습니다! 회원가입하러 가기");
+        // } else if (userPassword !== savedPassword) {
+        //     document.write("비밀번호가 일치하지 않습니다!");
+        // }
 
-        if (userId == savedId && userPassword === savedPassword) {
+        if (userId === savedId && userPassword === savedPassword) {
             document.write(userId + "님 반갑습니다!");
-        } else if (userId != savedId) {
-            document.write("아이디가 일치하지 않습니다! 회원가입하러 가기")
-        }   
-
+            // if (userId != savedId) {
+            // document.write("아이디가 일치하지 않습니다! 회원가입하러 가기");
+            // } else if (userPassword != savedPassword) {
+            //     document.write("비밀번호가 일치하지 않습니다!")
+            // }
+        }
         
         
     </script>

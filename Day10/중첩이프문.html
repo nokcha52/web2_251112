@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 유저 아이디와 비밀번호를 미리 저장해둔 후
+        // 사용자에게 id/ password를 입력받는다.
+        // 설정해놓은 아이디와 비밀번호 모두가 일치할 경우 -> id님 반갑습니다!
+        // 비밀번호가 일치하지 않을 경우 -> 비밀번호가 일치하지 않습니다!
+        // 아이디와 일치하지 않을 경우 -> 아이디와 일치하지 않습니다. 회원가입하러 가기 출력
+
+        let savedId = 'wltn';
+        let savedPassword = 1234;
+
+        let userId = prompt("사용자의 id를 입력하세요")
+        let userPassword = prompt("사용자의 비밀번호를 입력하세요")
+        
+        if (userId == savedId && userPassword == savedPassword) {
+            document.write(userId + "님 반갑습니다!");
+        } else if (userId != savedId && userPassword == savedPassword) {
+            document.write("아이디와 일치하지 않습니다! 회원가입 하러가기");
+            if (userId == savedId && userPassword != savedPassword) {
+                document.write("비밀번호가 일치하지 않습니다!");
+            }
+        } else {
+            document.write("일치하는 회원 정보가 없습니다. 회원가입 하러가기")
+        }
+        // }else {
+        //     document.write("없는 회원정보 입니다. 회원가입하러 가기");
+        
+
+    </script>
+    
+</body>
+</html>
