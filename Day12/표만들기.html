@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border {
+            border: 1px solid#000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // for(let i = 1; i <= 5; i++) {  
+        //     let table = "<table border='1'>";
+        //         table += "<tr>"
+        //         table += "</table>";
+        //     document.write(table);       
+                       
+        // } for(let j = 1; j <=5; j++) {
+        //     document.write(`${i*j}`);                 
+        // }
+
+        let num = 1;
+        let table = "<table border='1'>";
+
+        for(let i = 1; i <=5 ; i++){
+            table += "<tr>";
+            for(let j =1; j <= 5; j++){
+                table += `<td>${num}</td>`
+                num++;
+            }
+            table += "</tr>";
+        }
+        table += "</table>"
+        document.write(table);
+        
+    </script>
+    
+</body>
+</html>
