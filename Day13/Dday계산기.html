@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let nowYear = today.getFullYear();
+        let lastDay = new Date(nowYear,11,31);
+
+        let result1 = today.getTime();
+        let result2 = lastDay.getTime();
+        console.log(result1);
+        console.log(result2);
+
+        let dDay = lastDay.getTime() - today.getTime();
+
+        let result = Math.ceil(dDay / 86400000);
+        console.log(result);
+    </script>
+</body>
+</html>

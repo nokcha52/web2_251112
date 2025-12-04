@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩for문</title>
+    <style>
+        .bold {
+            font-weight: 800;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // for(초기값; 조건식; 증감식){
+        //     for(초기값; 조건식; 증감식){
+
+        //     }
+        // }
+
+        // for(let i = 1; i <= 3; i++){
+        //     for(let j = 1; j <= 2 ; j++){
+        //         document.write(`${i}행 ${j}열 <br>`);
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // for(let i = 1; i <= 9; i++){
+        //     document.write(`<p class= 'bold'> ${i}단 </p>`);
+        //     for(let j = 1; j <= 9 ; j++){
+        //         let result = i*j;
+        //         document.write(`${i} x ${j} = ${result} <br>` );
+        //     }
+        //     document.write("<br>")
+        // }
+        for(let i = 2; i <= 9 ; i++){
+            document.write(`<h2>${i}단</h2>`);
+            for(let j= 1; j <= 9; j++){
+                document.write(`${i}x${j} = ${i*j} <br>`);
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
