@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+        P {
+             margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <script>
@@ -18,31 +28,63 @@
         // 사용자가 이겼다면 당신이 이겼다(컴퓨터 : 컴퓨터 랜덤값) 출력
         // 컴퓨터가 이겼다면 컴퓨터가 이겼다(컴퓨터 : 컴퓨터 랜덤값) 출력
 
-        let rsp = prompt("가위~ 바위~ 보!");
-        let computerResult;
-        let userResult;
+
+        let userRcp = prompt("가위~ 바위~ 보!");
+        if (userRcp !== "가위" && userRcp !== "바위" && userRcp !== "보"){
+            alert("잘못 입력하셨습니다! 다시 입력하세요");
+            location.reload();
+        }
         let randomNum = Math.ceil(Math.random()*3);
+        let comRcp;
+
+        if (randomNum === 1) {
+            comRcp = "가위";
+        }else if (randomNum === 2) {
+            comRcp = "바위";
+        }else if (randomNum === 3){
+            comRcp = "보";
+        }
+
+        if (userRcp == comRcp) {
+            document.write(`<h2> 비겼습니다. 당신은 컴퓨터의 마음을 잘 아시는군요!</h2> <br> <p>당신은 ${userRcp}를 냈고, <br>컴퓨터도 ${comRcp}를 냈습니다. </p>`);
+        }else if (comRcp == "가위" && userRcp == "바위") {
+            document.write(`<h2> 축하합니다! 당신이 이겼습니다. </h2> <br> <p> 당신은 ${userRcp}를 냈고, <br>컴퓨터는 ${comRcp}를 냈습니다.</p> `);
+        }else if (comRcp == "바위" && userRcp == "보") {
+            document.write(`<h2> 축하합니다! 당신이 이겼습니다. </h2> <br> <p> 당신은 ${userRcp}를 냈고, <br>컴퓨터는 ${comRcp}를 냈습니다.</p>`);
+        }else if (comRcp == "보" && userRcp == "가위") {
+            document.write(`<h2> 축하합니다! 당신이 이겼습니다. </h2> <br> <p> 당신은 ${userRcp}를 냈고, <br>컴퓨터는 ${comRcp}를 냈습니다. </p>`);
+        }else {
+            document.write(`<h2> 아쉽지만 졌습니다. </h2> <br> <p> 당신은 ${userRcp}를 냈고, <br>컴퓨터는 ${comRcp}를 냈습니다. </p>`);
+        }
+
+        
+
+
+        // let rsp = prompt("가위~ 바위~ 보!");
+        // let computerResult;
+        // let userResult;
+        // let randomNum = Math.ceil(Math.random()*3);
 
         // 랜덤숫자를 가지고 임시변수를 대입해주는 if
-        if (randomNum == 1) {
-            computerResult = "가위";
-        }else if (randomNum == 2) {
-            computerResult = "바위";
-        }else if (randomNum == 3) {
-            computerResult = "보";
-        }
+        // if (randomNum == 1) {
+        //     computerResult = "가위";
+        // }else if (randomNum == 2) {
+        //     computerResult = "바위";
+        // }else if (randomNum == 3) {
+        //     computerResult = "보";
+        // }
         // 사용자가 입력한 값이랑 컴퓨터의 값이 같은지 비교하는 if
-        이겼다면
+        // 이겼다면
         // 나: 가위 컴: 보
         // 나: 주먹 컴: 가위
         // 나: 보 컴: 바위
-        if (rsp = "가위") {
-            userResult == 1;
-        }else if (rsp = "바위") {
-            userResult == 2;
-        }else if (rsp = "보") {
-            userResult == 3;
-        }
+        // if (rsp = "가위") {
+        //     userResult == 1;
+        // }else if (rsp = "바위") {
+        //     userResult == 2;
+        // }else if (rsp = "보") {
+        //     userResult == 3;
+        // }
 
         // if (randomNum > re)
 
