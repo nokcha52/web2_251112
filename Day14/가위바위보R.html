@@ -9,14 +9,14 @@
     <script>
         let userChoice = prompt("가위, 바위, 보 중 택 1");
 
-        let randoNum = Math.ceil(Math.random()*3);
-        console.log(randoNum);
+        let randomNum = Math.ceil(Math.random()*3);
+        console.log(randomNum);
 
         // 임시변수
         let computerChoice;
-        if (randoNum === 1) {
+        if (randomNum === 1) {
             computerChoice == "가위";
-        }else if(randoNum === 2) {
+        }else if(randomNum === 2) {
             computerChoice === "바위";
         }else {
             computerChoice === "보";
