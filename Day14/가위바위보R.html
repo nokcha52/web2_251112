@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userChoice = prompt("가위, 바위, 보 중 택 1");
+
+        let randoNum = Math.ceil(Math.random()*3);
+        console.log(randoNum);
+
+        // 임시변수
+        let computerChoice;
+        if (randoNum === 1) {
+            computerChoice == "가위";
+        }else if(randoNum === 2) {
+            computerChoice === "바위";
+        }else {
+            computerChoice === "보";
+        }
+
+        if (userChoice === computerChoice) {
+            document.write(`<p>비겼습니다. 컴퓨터도 ${computerChoice}를 냈습니다.</p>`);
+        }else if(
+            (userChoice === "가위" && computerChoice === "보") ||
+            (userChoice === "바위" && computerChoice === "가위") ||
+            (userChoice === "보" && computerChoice === "바위")
+        ) {
+            document.write(`<p>축하합니다. 사용자가 이겼습니다! 컴퓨터는 ${computerChoice}를 냈습니다.</p>`)
+        } else {
+            document.write(`<p>아쉽네요. 컴퓨터가 이겼네요. 컴퓨터는 ${computerChoice}를 냈습니다.</p>`)
+        }
+    </script>
+</body>
+</html>
